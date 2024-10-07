@@ -1,0 +1,106 @@
+/* Layout base */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1d3557; /* Fundo mais escuro */
+  margin: 0;
+  padding: 0;
+  color: #f1faee;
+}
+
+/* Slide layout */
+.slide {
+  background-color: #457b9d; /* Fundo azul claro */
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 50px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-header {
+  border-bottom: 2px solid #a8dadc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.slide-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f1faee;
+}
+
+.slide-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.slide-body p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f1faee;
+  text-align: justify;
+}
+
+/* Navegação */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.nav-button {
+  background-color: #e63946;
+  color: #f1faee;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #ff6b6b;
+}
+
+.nav-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.nav-indicator {
+  font-size: 1.2rem;
+  color: #f1faee;
+}
+
+/* Estilos para os subtópicos */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a8dadc;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #f1faee;
+  margin-bottom: 10px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
